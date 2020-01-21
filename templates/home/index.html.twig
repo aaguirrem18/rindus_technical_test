@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello</h1>
+
+    Check city by criteria<br>
+    city: city to find<br>
+    <a href="http://localhost/testAdolfo/public/check/city=malaga"> http://localhost/testAdolfo/public/check/city=malaga</a>
+    <br><br>
+    Criteria list (criteria.json)<br>
+    <a href="http://localhost/testAdolfo/public/criteria"> criteria List </a>
+    <br><br>
+    Enable/disable criterias<br>
+    n: criteria name<br>
+    s: status<br>
+    <a href="http://localhost/testAdolfo/public/criteria/n=oddLetter&s=false"> criteria/n=oddLetter&s=false </a>
+    <br><br>
+    Add new criteria by field existing pool (weather_api_fields.json)<br>
+    n: criteria name<br>
+    o: option<br>
+    f: field<br>
+    v: value to check<br>
+    <br><br>
+    <a href="http://localhost/testAdolfo/public/criteria/new/n=test&o=weather&f=main&p=compare&v=clouds"> criteria/new/n=test&o=weather&f=main&p=compare&v=clouds</a>
+    <br><br>
+    PHPUnit test Feature\apiTest.php
+    .\vendor\bin\phpunit
+
+</div>
+{% endblock %}

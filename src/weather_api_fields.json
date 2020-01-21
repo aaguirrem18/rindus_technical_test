@@ -1,0 +1,38 @@
+{
+    "pool_field": {
+        "weather": {
+            "main": "",
+            "description": "",
+            "functions": {
+                "firstletter" : "",
+                "lastletter" : "",
+                "compare" : "",
+                "contains" : ""
+            }
+        },
+        "wind": {
+            "speed": "",
+            "deg": "",
+            "functions": {
+                "lessto" : "",
+                "morethan" : ""
+            }
+        },
+        "main": {
+            "temp": "",
+            "feels_like": "",
+            "temp_min": "",
+            "temp_max": "",
+            "pressure": "",
+            "humidity": "",
+            "functions": {
+                "lessto" : "",
+                "morethan" : "",
+                "equalto" : ""
+            }
+        },
+        "sys":{
+
+        }
+    }
+}

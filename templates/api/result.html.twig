@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ApiController!{% endblock %}
+
+{% block body %}
+{{ json_response|json_encode(constant('JSON_PRETTY_PRINT')) }}
+
+{% endblock %}

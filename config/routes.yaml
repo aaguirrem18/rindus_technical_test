@@ -1,0 +1,27 @@
+index:
+  path: /inicio
+  controller: App\Controller\HomeController::index
+
+wheatherAPI:
+  path: /check/city={city}
+  controller: App\Controller\ApiController::checkProcess
+  defaults: { city: 'malaga' }
+  methods: [GET]
+
+criteriaList:
+  path: /criteria
+  controller: App\Controller\CriteriaController::criteriaList
+  defaults:
+
+criteriaAdd:
+  path: /criteria/new/n={name}&o={option}&f={field}&p={process}&v={value}
+  controller: App\Controller\CriteriaController::criteriaAdd
+  defaults:
+  methods: [POST,GET]
+
+criteriaConfig:
+  path: /criteria/n={name}&s={status}
+  controller: App\Controller\CriteriaController::criteriaConfig
+  requirements:
+    {status: true|false}
+  methods: [POST,GET]
